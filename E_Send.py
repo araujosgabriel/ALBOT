@@ -88,7 +88,7 @@ def Enviar_Email(aluno,destino):
         print(f"Enviando E-Mail para {aluno} | {destino}\n")
         remetente = mail
         msg = email.message.EmailMessage()
-        msg['Subject']  = 'Sirius ALBOT v1.5 | Formulário do Almoço IFPB-Picuí'
+        msg['Subject']  = 'Sirius ALBOT v1.5 | Formulário do Almoço *Destino*'
         msg['From'] = remetente
         msg['To'] = destino
         corpo_email = f"""
@@ -131,7 +131,7 @@ def Enviar_Email_Erro(aluno,destino):
         print(f"Enviando E-Mail para {aluno} | {destino}\n")
         remetente = mail
         msg = email.message.EmailMessage()
-        msg['Subject']  = 'Sirius ALBOT v1.5 | Formulário do Almoço IFPB-Picuí'
+        msg['Subject']  = 'Sirius ALBOT v1.5 | Formulário do Almoço *Destino*'
         msg['From'] = remetente
         msg['To'] = destino
         corpo_email = f"""
@@ -272,7 +272,7 @@ def Enviar_Cadastro(aluno,destino):
             </h3>
             </p>
             <p>Caro(a) {aluno}. Você foi cadastrado como usuário no Sirius ALBOT v1.5.</p>
-            <p>A partir de hoje, suas solicitações de almoço em: IFPB-Campus Picuí, estarão sendo preenchidas pelo mesmo.</p>
+            <p>A partir de hoje, suas solicitações de almoço em: *Destino*, estarão sendo preenchidas pelo mesmo.</p>
             <p>Solicitamos que, caso for faltar, envie um aviso até no máximo às 23h do dia pré anterior a solicitação.</p>
             <p>Exemplo: Meu cadastro é para a Quinta Feira, logo, caso eu venha a faltar, devo tentar avisar até às 23h da terça.</p>
             <p>Caso ocorra de você adoecer e seu almoço ainda for solicitado, solicite o cancelamento direto com a organização do restaurante.</p>
